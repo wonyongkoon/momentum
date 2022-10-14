@@ -1,0 +1,190 @@
+.hidden {
+    display:none;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 300px;
+    font-family: 'Baloo Tammudu 2', 'Noto Sans KR', sans-serif;
+}
+/* 배경 그림 */
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    min-width: 1880px;
+    max-height: 1400px;
+    min-height: 1200px;
+    z-index: -5;
+    filter: brightness(30%);
+}
+
+/* 로그인 폼의 위치 조정 */
+#login-form {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+/* 로그인 폼의 첫번째 인풋자식 */
+#login-form input:first-child {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 240px;
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    transition: all, 0.4s;
+}
+/* 로그인 폼의 첫번째 인풋자식 항목위에 마우스가 올라가면(hover) */
+#login-form input:first-child:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+/* 이거도 마우스 올라가면 바꾸는거 같음 */
+#login-form input:hover::-webkit-input-placeholder {
+    /*placeholder color change*/
+    color: rgb(50, 50, 50);
+}
+/* 로그인창 인풋창 클릭하면 바뀜 */
+#login-form input:first-child:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0,0,0,0);
+}
+/* 로그인 폼의 버튼 항목  */
+#login-form button {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(255,255,255,0.6);
+    color: rgb(80,80,80);
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    outline: none;
+    cursor: pointer;
+    transition: all, 0.4s;
+}
+/* 로그인 폼의 버튼 위에 마우스 올라갔을때 */
+#login-form button:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+/* 로그인 폼의 버튼 동작시 */
+#login-form button:active {
+    background-color: darkgray;
+    color: white;
+    outline: none;
+}
+/* 시계 */
+#clock {
+    text-align: center;
+    height: 260px;
+    font-size: 8rem;
+    margin: 10px;
+    color: white;
+    padding: -100px;
+}
+/* 사용자 이름 입력됐을때 나오는 문자 */
+#greeting {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* 투두 작성 위치 */
+#todo-form {
+    text-align: center;
+    margin-top: 0;
+}
+/* 투두 작성 인풋  */
+#todo-form input {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    width: 540px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 500;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    transition: all, 0.4s;
+}
+/* 투두 작성하는 곳에 마우스 올라가면 */
+#todo-form input:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+/* 투두 작성하는 곳에 마우스 올라가면 *2 글자가 바뀜 */
+#todo-form input:hover::-webkit-input-placeholder {
+    /*placeholder color change*/
+    color: rgb(50, 50, 50);
+}
+/* 투두 작성하는곳을 클릭하면 바뀜 */
+#todo-form input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0,0,0,0);
+}
+/* 투두 리스트 전체 위치 조정 */
+#todo-list {
+    text-align: center;
+}
+/* 투두 리스트 항목 각각 조정 */
+#todo-list li {
+    list-style: none;
+    color: rgba(250,250,250,0.8);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    width: 540px;
+    margin: 0 auto;
+}
+/* 투두 리스트의 글자위에 마우스가 올라가면 */
+#todo-list li:hover {
+    color: rgb(255, 166, 0);
+}
+/* 투두 리스트 버튼 조정 */
+#todo-list button {
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0);
+    outline: none;
+    color: white;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 1.2rem;
+}
+/* 버튼위에 마우스가 올라가면 커서 바뀜 */
+#todo-list button:hover {
+    cursor: pointer;
+}
+/* // 명언 조정 */
+#quote {
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    margin-left: 36px;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgba(255,255,255,0.8);
+}
+/* 날씨 조정 */
+#weather {
+    position: fixed;
+    top: 20px;
+    right: 36px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* // 날씨 위에 마우스 */
+#weather:hover {
+    color: rgb(255, 166, 0);
+}
