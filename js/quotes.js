@@ -44,7 +44,7 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child");    // html항목은 id : quote의 첫번째 span
 const author = document.querySelector("#quote span:last-child");    // html항목은 id : quote의 마지막 span
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];  
-
+w
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
 
